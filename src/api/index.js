@@ -11,7 +11,7 @@ export const fetchSongs = async () => {
         return data
         
     } catch (error) {
-
+        console.log(error)
     }
 }
 
@@ -20,6 +20,6 @@ export const fetchArt = async () => {
         const { data } = await axios.get(artUrl)
         return data
     } catch (error) {
-        
+        console.log(error)
     }
 }
